@@ -1,0 +1,141 @@
+/* MAIN WRAPPER */
+.hero-stats-container {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 60px 40px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #f8fbff;
+  border-radius: 30px;
+}
+
+/* LEFT SECTION */
+.left-section {
+  position: relative;
+}
+
+.hero-video {
+  width: 480px;
+  height: 550px;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+/* WHITE BUBBLE */
+.message-bubble {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  background: white;
+  padding: 25px 35px;
+  border-radius: 40px;
+  width: 350px;
+  box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.15);
+  transform: translateY(80px);
+}
+
+.message-bubble p {
+  margin: 0;
+  color: #2260d2;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.3;
+  
+}
+
+/* Right-section zig-zag layout */
+.right-section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 420px;           /* keeps column narrow like the screenshot */
+  align-items: stretch;   /* children can align independently */
+ 
+  position: relative;
+}
+
+/* common style for both card types */
+.right-section > div {
+  padding: 22px 28px;
+  border-radius: 30px;
+  box-shadow: 0 18px 40px rgba(15, 40, 80, 0.12);
+  transition: transform 0.35s ease, box-shadow 0.25s ease;
+  width: 330px;
+  max-width: 100%;
+}
+
+/* specific color variants */
+.stat-card.blue {
+  background: #2d65ff;
+  color: white;
+}
+
+.stat-card1.white {
+  background: #ffffff;
+  color: #111;
+}
+
+/* Zig-zag positioning using nth-child on the immediate children */
+.right-section > div:nth-child(1) {
+  align-self: flex-start;         /* left column baseline */
+  transform: translateX(80px);    /* push right */
+}
+
+.right-section > div:nth-child(2) {
+  align-self: flex-end;           /* right column baseline */
+  transform: translateX(-140px);   /* push left */
+}
+
+.right-section > div:nth-child(3) {
+  align-self: flex-start;
+  transform: translateX(80px);
+}
+
+.right-section > div:nth-child(4) {
+  align-self: flex-end;
+  transform: translateX(-140px);
+}
+
+/* Slight hover lift for interactivity */
+.right-section > div:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 28px 60px rgba(15, 40, 80, 0.18);
+}
+
+/* Typography inside cards */
+.stat-card h3,
+.stat-card1 h2,
+.stat-card1 h3 {
+  margin: 0 0 6px 0;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.stat-card p,
+.stat-card1 p {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.92;
+}
+
+/* Responsive: stack & center on small screens */
+@media (max-width: 980px) {
+  .right-section {
+    width: 100%;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .right-section > div {
+    transform: none !important;
+    align-self: center !important;
+    width: 86%;
+    max-width: 520px;
+  }
+
+  .right-section > div:hover {
+    transform: translateY(-4px) scale(1.0);
+  }
+}

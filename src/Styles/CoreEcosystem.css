@@ -1,0 +1,115 @@
+.ecosystem {
+  background: linear-gradient(180deg, #f5fbff, #e3f2fd);
+  padding: 90px 20px;
+}
+
+.ecosystem-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header */
+.ecosystem-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.ecosystem-header h2 {
+  font-size: 40px;
+  color: #0d47a1;
+  margin-bottom: 12px;
+}
+
+.ecosystem-header p {
+  color: #455a64;
+  font-size: 18px;
+}
+
+/* Core Verticals */
+.verticals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-bottom: 70px;
+}
+
+.vertical-card {
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(13, 71, 161, 0.12);
+  transition: transform 0.3s ease;
+}
+
+.vertical-card:hover {
+  transform: translateY(-6px);
+}
+
+.vertical-tag {
+  display: inline-block;
+  background: #1e88e5;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+/* Vision */
+.ecosystem-vision {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 50px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.ecosystem-vision h3 {
+  font-size: 32px;
+  color: #0d47a1;
+  margin-bottom: 16px;
+}
+
+.ecosystem-vision p {
+  max-width: 900px;
+  margin: auto;
+  font-size: 17px;
+  color: #37474f;
+  line-height: 1.7;
+}
+
+/* Get Involved */
+.get-involved h3 {
+  font-size: 36px;
+  color: #0d47a1;
+  margin-bottom: 8px;
+}
+
+.get-involved-sub {
+  color: #546e7a;
+  margin-bottom: 40px;
+}
+
+.involvement-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+}
+
+.involvement-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  padding: 28px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(30, 136, 229, 0.12);
+}
+
+.involvement-card h4 {
+  color: #1e88e5;
+  margin-bottom: 10px;
+}
+
+.involvement-card p {
+  color: #37474f;
+  line-height: 1.6;
+}

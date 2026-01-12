@@ -1,0 +1,92 @@
+.carddiv {
+  width: 90%;
+  max-width: 1600px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Desktop: 3 cards */
+  gap: 5px;
+  padding: 0px 2px;
+}
+
+/* Large tablets / small laptops */
+@media (max-width: 1200px) {
+  .carddiv {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards */
+    gap: 40px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .carddiv {
+    gap: 30px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  .carddiv {
+    grid-template-columns: 1fr; /* 1 card */
+    /* gap: 25px; */
+    /* padding: 30px 16px; */
+  }
+}
+
+.ts-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  padding: 20px 0;
+}
+
+/* Slider Track */
+.ts-slider {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+}
+
+/* Each Slide */
+.ts-slide {
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Dots */
+.ts-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 12px;
+}
+
+.ts-dot {
+  width: 14px;
+  height: 14px;
+  background: #d0d0d0;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.ts-dot.active {
+  width: 32px;
+  border-radius: 10px;
+  background: #1a73e8;
+}
+
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .carddiv {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row on tablets */
+  }
+}
+
+@media (max-width: 600px) {
+  .carddiv {
+    grid-template-columns: repeat(1, 1fr); /* 1 per row on mobile */
+  }
+}
