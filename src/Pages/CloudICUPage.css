@@ -72,7 +72,7 @@
 /* CARD */
 .card,
 .highlight-card {
-  background: linear-gradient(135deg, #0f2027, #203a43);
+  background: linear-gradient(135deg, #d3f2ff, #7c7c7c);
   padding: 2rem;
   border-radius: 18px;
   text-align: center;
