@@ -1,0 +1,163 @@
+/* PAGE BASE */
+.dietin-page {
+  font-family: "Inter", system-ui, sans-serif;
+  background: #fffdf8;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+/* HERO */
+.dietin-hero {
+  max-width: 1200px;
+  margin: auto;
+  padding: 4.5rem 2rem 3.5rem;
+  text-align: left;
+}
+
+.dietin-hero h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #1f7a5b;
+  letter-spacing: 2px;
+}
+
+.dietin-hero h2 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  color: #111827;
+}
+
+.dietin-hero .tagline {
+  font-size: 1.1rem;
+  margin: 1rem 0;
+  color: #f59e0b;
+  font-weight: 600;
+}
+
+.dietin-hero p {
+  max-width: 720px;
+  font-size: 1rem;
+  color: #374151;
+}
+
+/* SECTION BASE */
+.dietin-section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 3.5rem 2rem;
+}
+
+/* LIGHT FOOD SECTION */
+.dietin-section.light {
+  background: #eaf6f1;
+  border-radius: 24px;
+  margin: 3rem auto;
+}
+
+/* HEADINGS */
+.dietin-section h2 {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #1f7a5b;
+  margin-bottom: 0.6rem;
+}
+
+.dietin-section h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #065f46;
+  margin-bottom: 1rem;
+}
+
+/* TEXT */
+.dietin-section p {
+  max-width: 820px;
+  color: #374151;
+}
+
+/* LISTS */
+.dietin-section ul,
+.dietin-section ol {
+  margin-top: 1.2rem;
+  padding-left: 1.2rem;
+}
+
+.dietin-section li {
+  margin-bottom: 0.7rem;
+}
+
+/* BENEFITS – FOOD CARDS */
+.benefits {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.benefits div {
+  background: #ffffff;
+  padding: 1.8rem;
+  border-radius: 20px;
+  border: 1px solid #e5e7eb;
+  transition: all 0.25s ease;
+}
+
+.benefits div:hover {
+  transform: translateY(-4px);
+  border-color: #1f7a5b;
+}
+
+.benefits strong {
+  font-size: 1.05rem;
+  color: #1f7a5b;
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.benefits p {
+  font-size: 0.95rem;
+  color: #4b5563;
+}
+
+/* PROMISE */
+.dietin-section.center {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+}
+
+.dietin-section.center .promise-box {
+  max-width: 900px;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 28px;
+  padding: 3rem 2.5rem;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+}
+
+/* Heading */
+.dietin-section.center h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #1f7a5b;
+  margin-bottom: 1.2rem;
+}
+
+/* Core Promise Lines */
+.dietin-section.center .promise-lines {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1f7a5b;
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+}
+
+/* Supporting Text */
+.dietin-section.center .promise-desc {
+  max-width: 680px;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: #374151;
+}

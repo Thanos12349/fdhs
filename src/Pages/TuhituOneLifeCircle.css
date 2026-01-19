@@ -1,0 +1,59 @@
+
+.onelife-wrapper {
+  font-family: "Inter", sans-serif;
+  color: #2f2f2f;
+  line-height: 1.75;
+}
+
+.onelife-hero {
+  padding: 5.5rem 1.5rem;
+  text-align: center;
+  background: linear-gradient(to bottom, #ecfdf5, #ffffff);
+}
+
+.onelife-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.onelife-section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 4.5rem 1.5rem;
+}
+
+.onelife-section.light {
+  background-color: #f9fafb;
+}
+
+.onelife-section.center {
+  text-align: center;
+}
+
+.onelife-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 1.75rem;
+  color: #047857;
+}
+
+.onelife-section ul {
+  margin: 1.5rem 0;
+  padding-left: 1.25rem;
+}
+
+.onelife-section li {
+  margin-bottom: 0.6rem;
+}
+
+.closing {
+  margin-top: 1.75rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #047857;
+}

@@ -48,83 +48,83 @@ export default function Home() {
             <Navbar />
             <HeroSection />
             <AboutSection />
-            <VisionMission/>
-            <CoreEcosystem/>
-            <WhyPartnerFDHS/>
+            <VisionMission />
+            <CoreEcosystem />
+            <WhyPartnerFDHS />
             {/* <HeroStats /> */}
-        <div className="carddiv">
-  <Card
-    image="/Images/tuhutu_bliss.png"
-    title="TUHITU BLISS"
-    desc="An integrated assisted living and wellness ecosystem combining medical care, rehabilitation, and holistic support for dignified living."
-    bgColor="#3478f6"
-    textColor="#ffffff"
-  />
+            <div className="carddiv">
+                <Card
+                    image="/Images/tuhutu_bliss.png"
+                    title="TUHITU BLISS"
+                    desc="An integrated assisted living and wellness ecosystem combining medical care, rehabilitation, and holistic support for dignified living."
+                    bgColor="#3478f6"
+                    textColor="#ffffff"
+                />
 
-  <Card
-    image="/Images/tuhituOne.png"
-    title="TUHITU – OneLife Circle"
-    desc="A membership-based community for connection, wellbeing, and belonging with curated social, wellness, and inter-generational experiences."
-    bgColor="#ffffff"
-    textColor="#3478f6"
-  />
+                <Card
+                    image="/Images/tuhituOne.png"
+                    title="TUHITU – OneLife Circle"
+                    desc="A membership-based community for connection, wellbeing, and belonging with curated social, wellness, and inter-generational experiences."
+                    bgColor="#ffffff"
+                    textColor="#3478f6"
+                />
 
-  <Card
-    image="/Images/dietin.png"
-    title="DIETIN"
-    desc="Wellness, on demand. Smart nutrition for workplaces and modern lifestyles—clean, convenient, and sustainable."
-    bgColor="#3478f6"
-    textColor="#ffffff"
-  />
+                <Card
+                    image="/Images/dietin.png"
+                    title="DIETIN"
+                    desc="Wellness, on demand. Smart nutrition for workplaces and modern lifestyles—clean, convenient, and sustainable."
+                    bgColor="#3478f6"
+                    textColor="#ffffff"
+                />
 
-  <Card
-    image="/Images/cloudicu.png"
-    title="SEVAMED"
-    desc="Medicines, anytime, anywhere. Automated, cashless access to essential healthcare services available 24/7."
-    bgColor="#ffffff"
-    textColor="#3478f6"
-  />
+                <Card
+                    image="/Images/cloudicu.png"
+                    title="SEVAMED"
+                    desc="Medicines, anytime, anywhere. Automated, cashless access to essential healthcare services available 24/7."
+                    bgColor="#ffffff"
+                    textColor="#3478f6"
+                />
 
-  <Card
-    image="/Images/cloudicu.png"
-    title="Doctor Sahib"
-    desc="Consult. Prescribe. Connect. Digital consultations and e-prescriptions seamlessly linked to care delivery."
-    bgColor="#3478f6"
-    textColor="#ffffff"
-  />
+                <Card
+                    image="/Images/cloudicu.png"
+                    title="Doctor Sahib"
+                    desc="Consult. Prescribe. Connect. Digital consultations and e-prescriptions seamlessly linked to care delivery."
+                    bgColor="#3478f6"
+                    textColor="#ffffff"
+                />
 
-  <Card
-    image="/Images/cloudicu.png"
-    title="SEyRAYA"
-    desc="Balance, built into life. Preventive wellness solutions for body, mind, and emotional clarity."
-    bgColor="#ffffff"
-    textColor="#3478f6"
-  />
+                <Card
+                    image="/Images/cloudicu.png"
+                    title="SEyRAYA"
+                    desc="Balance, built into life. Preventive wellness solutions for body, mind, and emotional clarity."
+                    bgColor="#ffffff"
+                    textColor="#3478f6"
+                />
 
-  <Card
-    image="/Images/cloudicu.png"
-    title="CLOUD ICU"
-    desc="Critical care, connected. Real-time ICU monitoring with expert oversight anytime, anywhere."
-    bgColor="#3478f6"
-    textColor="#ffffff"
-  />
+                <Card
+                    image="/Images/cloudicu.png"
+                    title="CLOUD ICU"
+                    desc="Critical care, connected. Real-time ICU monitoring with expert oversight anytime, anywhere."
+                    bgColor="#3478f6"
+                    textColor="#ffffff"
+                />
 
-  <Card
-    image="/Images/physiovera.png"
-    title="PHYSIOVERA"
-    desc="Move better. Live stronger. Personalized physiotherapy for pain relief, recovery, and long-term mobility."
-    bgColor="#ffffff"
-    textColor="#3478f6"
-  />
+                <Card
+                    image="/Images/physiovera.png"
+                    title="PHYSIOVERA"
+                    desc="Move better. Live stronger. Personalized physiotherapy for pain relief, recovery, and long-term mobility."
+                    bgColor="#ffffff"
+                    textColor="#3478f6"
+                />
 
-  <Card
-    image="/Images/medumass.png"
-    title="MEDUMASS"
-    desc="From learning medicine to practicing it. CBME-aligned digital education combined with hands-on clinical skills and simulation training."
-    bgColor="#3478f6"
-    textColor="#ffffff"
-  />
-</div>
+                <Card
+                    image="/Images/medumass.png"
+                    title="MEDUMASS"
+                    desc="From learning medicine to practicing it. CBME-aligned digital education combined with hands-on clinical skills and simulation training."
+                    bgColor="#3478f6"
+                    textColor="#ffffff"
+                />
+            </div>
 
             {/* <ModernSlider /> */}
             <div className="ts-wrapper">

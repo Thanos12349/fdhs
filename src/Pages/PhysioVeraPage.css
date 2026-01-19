@@ -1,0 +1,94 @@
+/* Base Styles */
+.physiovera-page {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #2e2e2e;
+  background-color: #f9fafb;
+  line-height: 1.7;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #2c7a7b, #38b2ac);
+  color: white;
+  text-align: center;
+  padding: 90px 20px;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.hero h2 {
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  max-width: 820px;
+  margin: 10px auto;
+  font-size: 1.1rem;
+}
+
+/* Sections */
+.section {
+  padding: 70px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 35px;
+  color: #2c7a7b;
+}
+
+/* Light Background Sections */
+.section.light {
+  background-color: #edfdfd;
+}
+
+/* Cards */
+.card {
+  background-color: #ffffff;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.card h4 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #2c7a7b;
+}
+
+/* Lists */
+.section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+/* Promise Section */
+.promise {
+  text-align: center;
+  background-color: #e6fffa;
+}
+
+.promise .tagline {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #2c7a7b;
+}
+
+/* Footer */
+.footer {
+  background-color: #2c7a7b;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
