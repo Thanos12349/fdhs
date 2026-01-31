@@ -1,73 +1,179 @@
+/* =================================
+   ROOT PAGE
+================================= */
 .doctor-page {
-  font-family: "Inter", sans-serif;
-  color: #1f2937;
+  font-family: "Inter", system-ui, sans-serif;
+  color: #102a43;
   line-height: 1.75;
+  background: #ffffff;
+  overflow-x: hidden;
 }
 
-/* HERO */
+/* =================================
+   HERO
+================================= */
 .doctor-hero {
-  padding: 5rem 1.5rem;
+  padding: 6rem 1.5rem 6.5rem;
   text-align: center;
-  background: linear-gradient(180deg, #eef2ff, #ffffff);
+  background: radial-gradient(circle at top,
+      #ecf5fd 0%,
+      #f8fbff 55%,
+      #ffffff 100%);
 }
 
 .doctor-hero h1 {
-  font-size: 3rem;
+  font-size: clamp(3rem, 5vw, 4rem);
   font-weight: 800;
-}
-
-.doctor-hero h2 {
-  font-size: 1.6rem;
-  color: #2563eb;
-  margin: 0.5rem 0 1.2rem;
-}
-
-/* SECTIONS */
-.doctor-section {
-  max-width: 1100px;
-  margin: auto;
-  padding: 4rem 1.5rem;
-}
-
-.doctor-section.light {
-  background: #f8fafc;
-}
-
-.doctor-section h2 {
-  font-size: 2rem;
+  letter-spacing: 0.12em;
+  color: #0f172a;
   margin-bottom: 1rem;
 }
 
+.doctor-hero h2 {
+  font-size: 1.35rem;
+  color: #2563eb;
+  margin: 0.75rem 0 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.doctor-hero p {
+  max-width: 760px;
+  margin: auto;
+  font-size: 1.05rem;
+  color: #3a4f66;
+  line-height: 1.6;
+}
+
+/* =================================
+   SECTIONS
+================================= */
+.doctor-section {
+  max-width: 1200px;
+  margin: 2.5rem auto;
+  padding: 4.5rem 1.5rem;
+  border-radius: 28px;
+  background: linear-gradient(145deg,
+      #e3f3ff 0%,
+      #f7fbff 100%);
+}
+
+.doctor-section.light {
+  background: linear-gradient(145deg,
+      #e3f3ff 0%,
+      #f7fbff 100%);
+}
+
+/* Section headings */
+.doctor-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.25rem;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  color: #102a43;
+}
+
+.doctor-section h2 span {
+  color: #2563eb;
+}
+
+.doctor-section p {
+  font-size: 1rem;
+  color: #3a4f66;
+  line-height: 1.6;
+}
+
+/* =================================
+   LISTS – MODERN, CLINICAL
+================================= */
 .doctor-section ul {
-  padding-left: 1.5rem;
-  margin-top: 1rem;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1.5rem;
 }
 
 .doctor-section li {
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.75rem;
+  padding-left: 1.2rem;
+  border-left: 3px solid #2563eb;
+  color: #3a4f66;
+  font-size: 0.95rem;
+  background: linear-gradient(to right,
+      rgba(37, 99, 235, 0.06),
+      transparent);
 }
 
-/* FEATURES */
-.feature {
-  background: #ffffff;
-  padding: 1.4rem;
-  border-radius: 12px;
-  margin-top: 1rem;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+/* =================================
+   FEATURE BLOCKS
+================================= */
+.doc-feature {
+    background: linear-gradient(125deg,
+      #e3f3ff 0%,
+      #f7fbff 50%,
+      #e3f3ff 100%,);   
+  padding: 2rem 1.8rem;                       
+  /* border-radius: 28px;                          */
+  margin-top: 1.5rem;
+  box-shadow: 0 10px 25px rgba(16, 42, 67, 0.08); /* Softer, more natural shadow */
+  border-left: 4px solid #2563eb;             /* Accent line remains */
+  transition: transform 0.35s ease, box-shadow 0.35s ease, background 0.3s ease;
+  backdrop-filter: blur(8px);                 /* Subtle glass effect */
 }
 
-.feature strong {
+.doc-feature:hover {
+  background: linear-gradient(125deg,#2563eb,#0f172a);
+  color: #ffffff;
+  transform: translateY(-6px);
+  box-shadow: 0 22px 50px rgba(16, 42, 67, 0.18);
+}
+
+.doc-feature strong {
   display: block;
   color: #2563eb;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+.doc-feature:hover strong {
+  color: #ffffff;
 }
 
-/* TEXT */
+
+.doc-feature p {
+  font-size: 0.95rem;
+  color: #3a4f66;
+  line-height: 1.5;
+}
+.doc-feature:hover p{
+  color: #ffffff;
+}
+
+/* =================================
+   TEXT HELPERS
+================================= */
 .center {
   text-align: center;
 }
 
 .closing {
   font-weight: 700;
-  margin-top: 1.2rem;
+  margin-top: 2rem;
+  font-size: 1.25rem;
+  text-align: center;
+  color: #0f172a;
+  max-width: 760px;
+  margin-inline: auto;
+}
+
+/* =================================
+   RESPONSIVE
+================================= */
+@media (max-width: 900px) {
+  .doctor-hero h1 {
+    letter-spacing: 0.08em;
+  }
+
+  .doctor-section {
+    padding: 3.5rem 1.25rem;
+  }
 }

@@ -22,16 +22,21 @@ export default function TuhituBlissPage() {
                 </section>
 
                 {/* Intro */}
-                <section className="section">
-                    <p>
-                        From recovery to restoration, from assisted living to lifelong wellness, every journey at Tuhitu Bliss
-                        is shaped by a shared purpose: to offer safety, comfort, dignity, and hope.
-                    </p>
-                    <p>
-                        Residents, families, doctors, caregivers, therapists, volunteers, and partners move forward as one —
-                        because true wellbeing is never delivered alone; it is created together.
-                    </p>
-                    <p className="highlight">At Tuhitu Bliss, care is not a service. It is a way of life.</p>
+                <section className="section1">
+                    <div className="inner-section">
+                        <p>
+                            From recovery to restoration, from assisted living to lifelong wellness, every journey at Tuhitu Bliss
+                            is shaped by a shared purpose: to offer safety, comfort, dignity, and hope.
+                        </p>
+                        <p>
+                            Residents, families, doctors, caregivers, therapists, volunteers, and partners move forward as one —
+                            because true wellbeing is never delivered alone; it is created together.
+                        </p>
+                        <p className="highlight">At Tuhitu Bliss, care is not a service. It is a way of life.</p>
+                    </div>
+                    <div className="img-section">
+                        <img src="./Images/tuhitu2.jpg" alt="" />
+                    </div>
                 </section>
 
                 {/* Core Pillars */}
@@ -80,21 +85,27 @@ export default function TuhituBlissPage() {
                 </section>
 
                 {/* Lifelong Care */}
-                <section className="section">
-                    <h2>A LIFELONG CARE MODEL</h2>
-                    <p>
-                        Health is not a moment — it is a journey. Wellbeing is not only clinical; it is emotional, social,
-                        and purposeful.
-                    </p>
-                    <ul>
-                        <li>Continuity of care across life stages</li>
-                        <li>Integrated medical, therapeutic, emotional, and social support</li>
-                        <li>Prevention, healing, recovery, and thriving</li>
-                    </ul>
-                    <p>
-                        Because healthspan — living stronger, better, and more meaningfully — matters more than simply
-                        adding years.
-                    </p>
+                <section className="section1">
+                    <div className="inner-section">
+                        <h2>A LIFELONG CARE MODEL</h2>
+                        <p>
+                            Health is not a moment — it is a journey. Wellbeing is not only clinical; it is emotional, social,
+                            and purposeful.
+                        </p>
+                        <ul>
+                            <li>Continuity of care across life stages</li>
+                            <li>Integrated medical, therapeutic, emotional, and social support</li>
+                            <li>Prevention, healing, recovery, and thriving</li>
+                        </ul>
+                        <p>
+                            Because healthspan — living stronger, better, and more meaningfully — matters more than simply
+                            adding years.
+                        </p>
+                    </div>
+                    <div className="img-section">
+                        <img src="./Images/tuhitu1.jpg" alt="" />
+
+                    </div>
                 </section>
 
                 {/* Community */}
@@ -132,18 +143,24 @@ export default function TuhituBlissPage() {
 
 
                 {/* Our Belief */}
-                <section className="section">
-                    <h2>OUR BELIEF</h2>
-                    <ul>
-                        <li>Every stage of life carries strength, wisdom, and purpose</li>
-                        <li>Experiences gathered over time deserve dignity and understanding</li>
-                        <li>No phase of life should be reduced to limitation</li>
-                        <li>Aging is about adding life to years, not just years to life</li>
-                    </ul>
-                    <p>
-                        True wellbeing is never achieved in isolation. It is shaped through collective care where families,
-                        caregivers, doctors, therapists, volunteers, and communities support the individual as a whole.
-                    </p>
+                <section className="section1">
+                    <div className="inner-section">
+                        <h2>OUR BELIEF</h2>
+                        <ul>
+                            <li>Every stage of life carries strength, wisdom, and purpose</li>
+                            <li>Experiences gathered over time deserve dignity and understanding</li>
+                            <li>No phase of life should be reduced to limitation</li>
+                            <li>Aging is about adding life to years, not just years to life</li>
+                        </ul>
+                        <p>
+                            True wellbeing is never achieved in isolation. It is shaped through collective care where families,
+                            caregivers, doctors, therapists, volunteers, and communities support the individual as a whole.
+                        </p>
+
+                    </div>
+                    <div className="img-section"> 
+                        <img src="./Images/tuhitu.jpg" alt="" />
+                    </div>
                 </section>
 
 

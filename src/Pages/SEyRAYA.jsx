@@ -28,7 +28,7 @@ export default function SEyRAYA() {
                 <section className="seyraya-section">
                     <h2>OUR PHILOSOPHY</h2>
                     <p>True wellness is sustainable when it is:</p>
-                    <ul>
+                    <ul className="seyraya-list">
                         <li>Preventive, not reactive</li>
                         <li>Integrated, not occasional</li>
                         <li>Balanced across body, mind, and emotions</li>
@@ -40,7 +40,7 @@ export default function SEyRAYA() {
                 </section>
 
                 {/* OFFERINGS */}
-                <section className="seyraya-section light">
+                <section className="seyraya-section seyraya-section-light">
                     <h2>WHAT SEyRAYA OFFERS</h2>
 
                     <h3>SEyRAYA | Wellness Programmes</h3>
@@ -50,7 +50,7 @@ export default function SEyRAYA() {
                         restoration—tailored for sustainable balance and long-term wellbeing.
                     </p>
 
-                    <div className="program">
+                    <div className="seyraya-program">
                         <h4>Ayurveda & Panchkarma</h4>
                         <p>Minimum Duration: 14 Days</p>
                         <p>Therapy Hours: 30–45 hrs</p>
@@ -61,7 +61,7 @@ export default function SEyRAYA() {
                         </p>
                     </div>
 
-                    <div className="program">
+                    <div className="seyraya-program">
                         <h4>Yoga & Yogic Wellness</h4>
                         <p>Minimum Duration: 7 Days</p>
                         <p>Therapy Hours: 15–25 hrs</p>
@@ -72,7 +72,7 @@ export default function SEyRAYA() {
                         </p>
                     </div>
 
-                    <div className="program">
+                    <div className="seyraya-program">
                         <h4>Physiotherapy & Body Alignment Care</h4>
                         <p>Minimum Duration: 7 Days</p>
                         <p>Therapy Hours: 18–30 hrs</p>
@@ -83,7 +83,7 @@ export default function SEyRAYA() {
                         </p>
                     </div>
 
-                    <div className="program">
+                    <div className="seyraya-program">
                         <h4>Fitness & Functional Wellness</h4>
                         <p>Minimum Duration: 7 Days</p>
                         <p>Therapy Hours: 15–25 hrs</p>
@@ -94,7 +94,7 @@ export default function SEyRAYA() {
                         </p>
                     </div>
 
-                    <div className="program">
+                    <div className="seyraya-program">
                         <h4>Facial & Skin Wellness</h4>
                         <p>Minimum Duration: 7 Days</p>
                         <p>Therapy Hours: 10–18 hrs</p>
@@ -105,7 +105,7 @@ export default function SEyRAYA() {
                         </p>
                     </div>
 
-                    <div className="program">
+                    <div className="seyraya-program">
                         <h4>Emotional & Mindfulness Wellness</h4>
                         <p>Minimum Duration: 7 Days</p>
                         <p>Therapy Hours: 12–20 hrs</p>
@@ -116,7 +116,7 @@ export default function SEyRAYA() {
                         </p>
                     </div>
 
-                    <div className="program">
+                    <div className="seyraya-program">
                         <h4>Comprehensive Wellness Programme</h4>
                         <p>Minimum Duration: 14 Days</p>
                         <p>Therapy Hours: 60–90 hrs</p>
@@ -132,7 +132,7 @@ export default function SEyRAYA() {
                 <section className="seyraya-section">
                     <h2>OUR APPROACH</h2>
                     <p>SEyRAYA blends:</p>
-                    <ul>
+                    <ul className="seyraya-list">
                         <li>Structured therapeutic practices</li>
                         <li>Mindful, restorative techniques</li>
                     </ul>
@@ -143,21 +143,21 @@ export default function SEyRAYA() {
                 </section>
 
                 {/* WAY OF LIFE */}
-                <section className="seyraya-section light">
+                <section className="seyraya-section seyraya-section-light">
                     <h2>WELLNESS AS A WAY OF LIFE</h2>
-                    <ul>
+                    <ul className="seyraya-list">
                         <li>Lifestyle integration over short-term fixes</li>
                         <li>Balance over extremes</li>
                         <li>Continuity over isolated interventions</li>
                     </ul>
-                    <p>Wellness at SEyRAYA is not an event it’s a daily practice.</p>
+                    <p>Wellness at SEyRAYA is not an event — it’s a daily practice.</p>
                 </section>
 
                 {/* WHO IT IS FOR */}
                 <section className="seyraya-section">
                     <h2>WHO SEyRAYA IS FOR</h2>
-                    <ul>
-                        <li>Individuals seeking preventive, long Term wellbeing</li>
+                    <ul className="seyraya-list">
+                        <li>Individuals seeking preventive, long-term wellbeing</li>
                         <li>Professionals managing stress and lifestyle imbalance</li>
                         <li>Anyone looking to restore physical and emotional harmony</li>
                         <li>Communities and ecosystems focused on holistic health</li>
@@ -165,14 +165,14 @@ export default function SEyRAYA() {
                 </section>
 
                 {/* PROMISE */}
-                <section className="seyraya-section center light">
+                <section className="cloud-icu-section cloud-icu-promise">
                     <h2>THE SEyRAYA PROMISE</h2>
                     <p>Wellness should feel natural, achievable, and lasting.</p>
                     <p>
                         With SEyRAYA, balance becomes routine, restoration becomes
                         consistent, and wellbeing becomes part of everyday life.
                     </p>
-                    <p className="closing">
+                    <p className="seyraya-closing">
                         SEyRAYA — Where wellness finds its rhythm.
                     </p>
                 </section>

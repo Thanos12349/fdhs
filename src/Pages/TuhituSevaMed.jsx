@@ -156,16 +156,16 @@ export default function TuhituSevaMed() {
                 </section>
 
                 {/* PROMISE */}
-                <section className="seva-section center">
-                    <h2>THE TUHITU SEVA MED PROMISE</h2>
+                <section className="cloud-icu-section cloud-icu-promise">
+                    <h2 className="cloud-icu-section-title">THE TUHITU SEVA MED PROMISE</h2>
                     <p>Healthcare access should be continuous, dignified, and dependable.</p>
                     <p>With TuhiTu Seva Med, we are building a future where essential medicines are:</p>
-                    <ul>
+                    <ul className="seva-promise">
                         <li>Accessible without barriers</li>
                         <li>Delivered through smart technology</li>
                         <li>Available when people need them most</li>
                     </ul>
-                    <p className="closing">Because healthcare should not wait.</p>
+                    <p className="cloud-icu-section-title">Because healthcare should not wait.</p>
                 </section>
 
             </div>

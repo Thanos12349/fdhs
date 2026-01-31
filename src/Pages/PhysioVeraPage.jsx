@@ -10,7 +10,7 @@ const PhysioVeraPage = () => {
       <div className="physiovera-page">
 
         {/* Hero Section */}
-        <header className="hero">
+        <header className="physiovera-hero">
           <h1>PHYSIOVERA</h1>
           <h2>Restore Movement. Reclaim Independence.</h2>
           <p>
@@ -22,13 +22,13 @@ const PhysioVeraPage = () => {
         </header>
 
         {/* What PhysioVera Does */}
-        <section className="section light">
+        <section className="physiovera-section physiovera-section-light">
           <h3>WHAT PHYSIOVERA DOES</h3>
           <p>
             PhysioVera delivers personalized physiotherapy care designed around individual needs, conditions, and recovery goals.
           </p>
           <p>Our approach supports:</p>
-          <ul>
+          <ul className="physiovera-list">
             <li>Faster and safer recovery</li>
             <li>Reduced pain and stiffness</li>
             <li>Improved mobility and strength</li>
@@ -37,29 +37,29 @@ const PhysioVeraPage = () => {
         </section>
 
         {/* Our Approach */}
-        <section className="section">
+        <section className="physiovera-section">
           <h3>OUR APPROACH</h3>
 
-          <div className="card">
+          <div className="physiovera-card">
             <h4>Expert Consultations</h4>
             <p>Every journey begins with a thorough assessment by experienced physiotherapists.</p>
           </div>
 
-          <div className="card">
+          <div className="physiovera-card">
             <h4>Tailored Treatment Plans</h4>
             <p>Personalized therapy programs designed for injury type, recovery stage, and lifestyle needs.</p>
           </div>
 
-          <div className="card">
+          <div className="physiovera-card">
             <h4>Sustainable Recovery Focus</h4>
             <p>Care plans aimed at long-term results not temporary relief.</p>
           </div>
         </section>
 
         {/* Conditions We Support */}
-        <section className="section light">
+        <section className="physiovera-section physiovera-section-light">
           <h3>CONDITIONS WE SUPPORT</h3>
-          <ul>
+          <ul className="physiovera-list">
             <li>Musculoskeletal injuries</li>
             <li>Post-surgical rehabilitation</li>
             <li>Chronic pain and stiffness</li>
@@ -72,9 +72,9 @@ const PhysioVeraPage = () => {
         </section>
 
         {/* Why PhysioVera */}
-        <section className="section">
+        <section className="physiovera-section">
           <h3>WHY PHYSIOVERA</h3>
-          <ul>
+          <ul className="physiovera-list">
             <li>Patient-centric, goal oriented care</li>
             <li>Evidence-based physiotherapy techniques</li>
             <li>Focus on functional recovery and independence</li>
@@ -86,9 +86,9 @@ const PhysioVeraPage = () => {
         </section>
 
         {/* Who PhysioVera Is For */}
-        <section className="section light">
+        <section className="physiovera-section physiovera-section-light">
           <h3>WHO PHYSIOVERA IS FOR</h3>
-          <ul>
+          <ul className="physiovera-list">
             <li>Individuals recovering from injuries or surgery</li>
             <li>People managing chronic pain</li>
             <li>Seniors aiming to maintain mobility and independence</li>
@@ -97,13 +97,13 @@ const PhysioVeraPage = () => {
         </section>
 
         {/* Promise */}
-        <section className="section promise">
+        <section className="physiovera-section physiovera-section-promise">
           <h3>THE PHYSIOVERA PROMISE</h3>
           <p>Recovery should be guided, personalized, and lasting.</p>
           <p>
             At PhysioVera, we support your journey toward strength, mobility, and a better quality of life every step of the way.
           </p>
-          <p className="tagline">PhysioVera - Care that helps you move forward.</p>
+          <p className="physiovera-tagline">PhysioVera - Care that helps you move forward.</p>
         </section>
 
       </div>

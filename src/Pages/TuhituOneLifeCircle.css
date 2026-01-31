@@ -1,59 +1,152 @@
-
+/* =================================
+   ROOT WRAPPER
+================================= */
 .onelife-wrapper {
-  font-family: "Inter", sans-serif;
-  color: #2f2f2f;
+  font-family: "Inter", system-ui, sans-serif;
+  color: #102a43;
   line-height: 1.75;
+  background: #ffffff;
+  overflow-x: hidden;
 }
 
+/* =================================
+   HERO
+================================= */
 .onelife-hero {
-  padding: 5.5rem 1.5rem;
+  padding: 5.8rem 1.5rem 6.2rem;
   text-align: center;
-  background: linear-gradient(to bottom, #ecfdf5, #ffffff);
+  background: radial-gradient(
+    circle at top,
+    #ecf5fd 0%,
+    #f8fbff 55%,
+    #ffffff 100%
+  );
 }
 
 .onelife-hero h1 {
-  font-size: 3rem;
-  font-weight: 700;
+  font-size: clamp(3rem, 5vw, 4.2rem);
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: #0f172a;
+  margin-bottom: 1rem;
 }
 
+/* =================================
+   SECTIONS
+================================= */
 .onelife-section {
-  max-width: 1100px;
-  margin: auto;
-  padding: 4.5rem 1.5rem;
+  max-width: 1200px;
+  margin: 2.5rem auto;
+  padding: 2.5rem 1.5rem;
+  border-radius: 28px;
 }
+.onelife-section1 {
+  max-width: 1200px;
+  margin: 2.5rem auto;
+  padding: 2.5rem 1.5rem;
+  border-radius: 28px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.onelife-inner-section{
+  flex: auto;
+  justify-content: center;
+  align-items:center ;
+  
+}
+.onelife-img{
+  
+}
+.onelife-img img{
+  width: 400px;
+  height: 400px;
 
+}
+/* Light / Glass Section */
 .onelife-section.light {
-  background-color: #f9fafb;
+  background: linear-gradient(
+    145deg,
+    #e3f3ff 0%,
+    #f7fbff 100%
+  );
 }
 
+/* Centered Sections */
 .onelife-section.center {
   text-align: center;
 }
 
+/* =================================
+   SECTION HEADINGS
+================================= */
 .onelife-section h2 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-}
-
-.subtitle {
-  font-size: 1.25rem;
-  font-weight: 500;
+  font-size: 2.1rem;
   margin-bottom: 1.75rem;
-  color: #047857;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  color: #102a43;
 }
 
+.onelife-section h2 span {
+  color: #2563eb;
+}
+
+/* =================================
+   SUBTITLE
+================================= */
+.subtitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 2.25rem;
+  color: #2563eb;
+  letter-spacing: 0.05em;
+}
+
+/* =================================
+   LISTS – MODERN, CLINICAL
+================================= */
 .onelife-section ul {
-  margin: 1.5rem 0;
-  padding-left: 1.25rem;
+  list-style: none;
+  margin: 2rem 0;
+  padding-left: 0;
 }
 
 .onelife-section li {
-  margin-bottom: 0.6rem;
+  padding: 0.45rem 0 0.45rem 1.2rem;
+  margin-bottom: 0.85rem;
+  border-left: 3px solid #2563eb;
+  color: #3a4f66;
+  font-size: 0.95rem;
+  background: linear-gradient(
+    to right,
+    rgba(37, 99, 235, 0.06),
+    transparent
+  );
 }
 
+/* =================================
+   CLOSING STATEMENT
+================================= */
 .closing {
-  margin-top: 1.75rem;
-  font-size: 1.15rem;
+  margin-top: 2.5rem;
+  font-size: 1.2rem;
   font-weight: 600;
-  color: #047857;
+  color: #0f172a;
+  text-align: center;
+  max-width: 760px;
+  margin-inline: auto;
+}
+
+/* =================================
+   RESPONSIVE
+================================= */
+@media (max-width: 900px) {
+  .onelife-hero h1 {
+    letter-spacing: 0.08em;
+  }
+
+  .onelife-section {
+    padding: 3.5rem 1.25rem;
+  }
 }

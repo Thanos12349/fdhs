@@ -1,79 +1,178 @@
+/* =================================
+   ROOT PAGE WRAPPER
+================================= */
 .seyraya-page {
-  font-family: "Inter", sans-serif;
-  color: #1f2937;
+  font-family: "Inter", system-ui, sans-serif;
+  color: #102a43;
   line-height: 1.75;
+  background: #ffffff;
+  overflow-x: hidden;
 }
 
-/* HERO */
+/* =================================
+   HERO SECTION
+================================= */
 .seyraya-hero {
-  padding: 5rem 1.5rem;
+  padding: 2rem 1.5rem 2.5rem;
   text-align: center;
-  background: linear-gradient(180deg, #fdf6f0, #ffffff);
+  background: radial-gradient(
+    circle at top,
+    #ecf5fd 0%,
+    #f8fbff 55%,
+    #ffffff 100%
+  );
 }
 
 .seyraya-hero h1 {
-  font-size: 3rem;
+  font-size: clamp(3rem, 5vw, 4rem);
   font-weight: 800;
-  letter-spacing: 1px;
-}
-
-.seyraya-hero h2 {
-  font-size: 1.6rem;
-  color: #b45309;
-  margin: 0.6rem 0 1.2rem;
-}
-
-/* SECTIONS */
-.seyraya-section {
-  max-width: 1100px;
-  margin: auto;
-  padding: 4rem 1.5rem;
-}
-
-.seyraya-section.light {
-  background: #fffaf5;
-}
-
-.seyraya-section h2 {
-  font-size: 2rem;
+  letter-spacing: 0.12em;
+  color: #0f172a;
   margin-bottom: 1rem;
 }
 
+.seyraya-hero h2 {
+  font-size: 1.35rem;
+  color: #2563eb;
+  margin: 0.8rem 0 1.5rem;
+  font-weight: 600;
+}
+
+.seyraya-hero p {
+  max-width: 760px;
+  margin: auto;
+  font-size: 1.05rem;
+  color: #3a4f66;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* =================================
+   SECTIONS
+================================= */
+.seyraya-section {
+  max-width: 1200px;
+  margin: 1.5rem auto;
+  padding: 2.5rem 1.5rem;
+  border-radius: 28px;
+}
+
+.seyraya-section-light {
+  background: linear-gradient(145deg, #f8fafc 0%, #ffffff 100%);
+}
+
+.seyraya-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.2rem;
+  color: #102a43;
+  text-align: center;
+  font-weight: 700;
+}
+
+.seyraya-section h2 span {
+  color: #2563eb;
+}
+
 .seyraya-section h3 {
-  font-size: 1.5rem;
-  margin: 1.5rem 0 0.8rem;
-}
-
-/* PROGRAM BLOCKS */
-.program {
-  background: #ffffff;
-  padding: 1.6rem;
-  border-radius: 14px;
-  margin-top: 1.5rem;
-  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.05);
-}
-
-.program h4 {
-  color: #b45309;
-  margin-bottom: 0.4rem;
-}
-
-/* LISTS */
-.seyraya-section ul {
-  padding-left: 1.5rem;
-  margin-top: 1rem;
-}
-
-.seyraya-section li {
-  margin-bottom: 0.6rem;
-}
-
-/* TEXT */
-.center {
+  font-size: 1.55rem;
+  margin: 1.8rem 0 0.9rem;
+  color: #2563eb;
+  font-weight: 600;
   text-align: center;
 }
 
-.closing {
+.seyraya-section p {
+  font-size: 1.05rem;
+  color: #3a4f66;
+  line-height: 1.6;
+}
+
+/* =================================
+   PROGRAM BLOCKS
+================================= */
+.seyraya-program {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2rem 1.8rem;
+  border-radius: 22px;
+  margin-top: 1.8rem;
+  box-shadow: 0 14px 35px rgba(16, 42, 67, 0.08);
+  border-left: 4px solid #2563eb;
+  transition: transform 0.35s ease, box-shadow 0.35s ease, background 0.3s ease;
+  backdrop-filter: blur(6px);
+}
+
+.seyraya-program:hover {
+  transform: translateY(-6px);
+  /* box-shadow: 0 26px 55px rgba(11, 94, 215, 0.25); */
+  background: linear-gradient(125deg,#87abf8,#1c2f5e)!important;
+}
+
+.seyraya-program h4 {
+  color: #2563eb;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.seyraya-program p {
+  color: #3a4f66;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+.seyraya-program:hover h4{
+  color: #050044;
+}
+.seyraya-program:hover p{
+  color: #ffffff;
+}
+
+/* =================================
+   LISTS – MODERN, NO DOTS
+================================= */
+.seyraya-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1.2rem;
+}
+
+.seyraya-list li {
+  padding-left: 1rem;
+  margin-bottom: 0.6rem;
+  border-left: 3px solid #2563eb;
+  color: #374151;
+  font-size: 0.95rem;
+  background: linear-gradient(to right, rgba(37, 99, 235, 0.06), transparent);
+}
+
+/* =================================
+   CLOSING / TAGLINE
+================================= */
+.seyraya-closing {
   font-weight: 700;
-  margin-top: 1.4rem;
+  margin-top: 1.8rem;
+  font-size: 1.25rem;
+  text-align: center;
+  color: #0f172a;
+}
+
+.seyraya-center {
+  text-align: center;
+}
+
+/* =================================
+   RESPONSIVE
+================================= */
+@media (max-width: 900px) {
+  .seyraya-hero h1 {
+    font-size: clamp(2.5rem, 8vw, 3.5rem);
+    letter-spacing: 0.08em;
+  }
+
+  .seyraya-section {
+    padding: 3.5rem 1.25rem;
+  }
+
+  .seyraya-program {
+    padding: 1.6rem 1.4rem;
+  }
 }

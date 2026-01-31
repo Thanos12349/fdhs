@@ -23,14 +23,19 @@ export default function TuhituOneLifeCircle() {
                     </p>
                 </section>
 
-                <section className="onelife-section">
-                    <h2>A Community Built on Connection</h2>
-                    <p>
-                        Tuhitu OneLife Circle is a membership based community platform designed to bring people together across generations elders, families, youngsters, and homemakers through shared experiences, engagement, and care.
-                    </p>
-                    <p>
-                        We believe wellbeing grows stronger when people feel connected, included, and valued.
-                    </p>
+                <section className="onelife-section1">
+                    <div className="onelife-inner-section">
+                        <h2>A Community Built on Connection</h2>
+                        <p>
+                            Tuhitu OneLife Circle is a membership based community platform designed to bring people together across generations elders, families, youngsters, and homemakers through shared experiences, engagement, and care.
+                        </p>
+                        <p>
+                            We believe wellbeing grows stronger when people feel connected, included, and valued.
+                        </p>
+                    </div>
+                    <div className="onelife-img">
+                        <img src="./Images/fdhs2.png" alt="" />
+                    </div>
                 </section>
 
                 <section className="onelife-section light">
@@ -79,12 +84,12 @@ export default function TuhituOneLifeCircle() {
                     </p>
                 </section>
 
-                <section className="onelife-section center">
-                    <h2>OUR PROMISE</h2>
-                    <p>
+                <section className="cloud-icu-promise cloud-icu-section">
+                    <h2 className="cloud-icu-section-title">OUR PROMISE</h2>
+                    <p className="cloud-icu-promise-text">
                         Through thoughtful memberships and regular community events, Tuhitu OneLife Circle creates spaces where people feel connected, engaged, and supported at every stage of life.
                     </p>
-                    <p className="closing">Because wellbeing is better when it’s shared.</p>
+                    <p className="cloud-icu-promise-text">Because wellbeing is better when it’s shared.</p>
                 </section>
             </div>
             <Footer />

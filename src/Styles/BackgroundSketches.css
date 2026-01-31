@@ -1,0 +1,54 @@
+/* ROOT CONTAINER */
+.page-root {
+  position: relative;     /* parent for sketches */
+  min-height: 100vh;      /* allows scroll */
+}
+
+/* Background sketches */
+.background-sketch-container {
+  position: absolute;     /* scrolls with page-root */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;           /* fills page-root */
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Sketch images */
+.background-sketch {
+  position: absolute;
+  width: 200px!important;
+  height: auto;
+  opacity: 0.2!important;          /* slightly more visible */
+  mix-blend-mode: lighten; /* ensures visibility on light sections */
+}
+
+/* Content always above sketches */
+.page-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Section backgrounds must allow sketches to show */
+.dietin-section.light::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(30,64,175,0.05);  /* soft blue overlay, transparent */
+  border-radius: 24px;
+  z-index: -1;                        /* behind text, above sketches */
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .background-sketch { width: 60px; opacity: 0.08; }
+}
+
+@media (max-width: 1024px) {
+  .background-sketch { width: 90px; opacity: 0.1; }
+}
+
+@media (min-width: 1025px) {
+  .background-sketch { width: 140px; opacity: 0.12; }
+}

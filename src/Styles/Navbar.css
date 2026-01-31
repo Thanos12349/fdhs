@@ -1,13 +1,13 @@
 /* Navbar Container */
 .navbar {
-  width: 92%;
+  width: 52%;
   max-width: 1300px;
   margin: 20px auto;
-  padding: 14px 34px;
+  padding: 14px!important;
   background: #ffffff;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   border-radius: 22px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   position: relative;
@@ -24,7 +24,7 @@
 .nav-links {
   display: flex;
   list-style: none;
-  gap: 6px;
+  gap: 26px;
   margin: 0;
   padding: 0;
 }
@@ -43,6 +43,7 @@
   white-space: nowrap;
 }
 
+
 /* Hover */
 .nav-links li:hover {
   background: #eef4ff;
@@ -55,6 +56,11 @@
 
 .nav-links li.active a {
   color: #ffffff;
+}
+
+.nav-links:hover li {
+  color: #070707;
+  background-color: #eef4ff;
 }
 
 /* Hamburger */
@@ -73,13 +79,68 @@
   transition: 0.3s;
 }
 
+/* Styling the Dropdown Toggle to look like your other links */
+.dropdown-link {
+  display: block;
+  padding: 10px 16px;
+  font-weight: 500;
+  text-decoration: none;
+  background-color: #2563eb;
+  color: #ffffff !important;
+  cursor: pointer;
+  border-radius: 14px;
+  transition: all 0.25s ease;
+}
+
+.dropdown-link:hover {
+  background: #eef4ff;
+  color: #070707 !important;
+}
+
+/* Dropdown Menu Box */
+.dropdown-menu {
+  border: none !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+  border-radius: 12px !important;
+  padding: 10px !important;
+}
+
+/* Individual Dropdown Items */
+.dropdown-item {
+  border-radius: 8px;
+  padding: 10px 20px !important;
+  color: #1f2937 !important;
+  font-size: 0.95rem;
+}
+
+.dropdown-item:hover {
+  background-color: #f3f4f6 !important;
+  color: #2563eb !important;
+}
+
+/* Active venture link inside dropdown */
+.active-item {
+  background-color: #2563eb !important;
+  color: white !important;
+}
+
+/* Remove the default bootstrap arrow if you want a cleaner look */
+.dropdown-toggle::after {
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
 /* Mobile */
 @media (max-width: 960px) {
+  .navbar{
+    padding-right: 10px;
+  }
   .hamburger {
     display: flex;
   }
 
   .nav-links {
+    width: 82%;
     position: absolute;
     top: calc(100% + 10px);
     left: 0;
@@ -87,7 +148,7 @@
     background: #ffffff;
     flex-direction: column;
     align-items: center;
-    padding: 26px 0;
+    padding: 26px 10px;
     border-radius: 0 0 22px 22px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
     display: none;
@@ -106,10 +167,88 @@
 /* Small Screens */
 @media (max-width: 480px) {
   .navbar {
+    width: 92%;
     padding: 12px 20px;
   }
 
   .logo {
     width: 145px;
   }
+}
+
+/* ... Keep your existing CSS ... */
+
+/* Responsive Dropdown Fix */
+@media (max-width: 960px) {
+  .navbar{
+    width: 90%;
+    padding: 10px!important;
+   
+  }
+  .nav-links {
+    max-height: 80vh;
+    /* Prevents overflow issues */
+    overflow-y: auto;
+
+  }
+
+
+  .venture-dropdown {
+    width: 90%;
+    
+  }
+
+  /* Make the dropdown menu a static part of the list on mobile */
+  .venture-dropdown .dropdown-menu {
+    position: static !important;
+    /* Forces it to push items down instead of floating */
+    float: none;
+    width: 100%;
+    background: #f9fafb;
+    /* Slightly different background to distinguish it */
+    border: none;
+    box-shadow: none !important;
+    transform: none !important;
+    text-align: center;
+    padding: 10px !important;
+    margin-top: 10px;
+  }
+
+  .dropdown-link {
+    display: block;
+    padding: 10px 16px;
+    font-weight: 500;
+    text-decoration: none;
+    background-color: #2563eb;
+    color: #ffffff !important;
+    cursor: pointer;
+    border-radius: 14px;
+    transition: all 0.25s ease;
+  }
+
+  .dropdown-item {
+    padding: 12px 0 !important;
+    border-radius: 0;
+    border-bottom: 1px solid #edf2f7;
+  }
+
+  .dropdown-item:last-child {
+    border-bottom: none;
+  }
+
+  /* Adjust the toggle arrow/spacing for mobile */
+
+}
+
+/* Hamburger Animation (Optional but nice) */
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
 }

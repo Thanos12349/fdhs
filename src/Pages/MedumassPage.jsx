@@ -8,8 +8,9 @@ const MedumassPage = () => {
         <>
             <Navbar />
             <div className="medumass-page">
+                
                 {/* Hero Section */}
-                <header className="hero">
+                <header className="medumass-hero">
                     <h1>MEDUMASS</h1>
                     <h2>Learning Knowledge. Practicing Care. Building Competence.</h2>
                     <p>
@@ -18,13 +19,13 @@ const MedumassPage = () => {
                 </header>
 
                 {/* MEDIKSHA Section */}
-                <section className="section mediksha">
+                <section className="medumass-section medumass-mediksha">
                     <h3>MEDIKSHA</h3>
                     <p><strong>CBME Aligned Digital Learning for Medical Education</strong></p>
                     <p>
                         MEDIKSHA is a competency based medical education (CBME) aligned digital platform designed for:
                     </p>
-                    <ul>
+                    <ul className="medumass-list">
                         <li>MBBS students</li>
                         <li>FMGE aspirants</li>
                         <li>Medical institutions</li>
@@ -33,7 +34,7 @@ const MedumassPage = () => {
                         It delivers structured, exam focused learning through modern digital tools that enhance understanding and retention.
                     </p>
                     <h4>KEY FEATURES</h4>
-                    <ul>
+                    <ul className="medumass-list">
                         <li>CBME-aligned curriculum mapping</li>
                         <li>Structured subject wise content</li>
                         <li>3D learning tools for anatomy and concepts</li>
@@ -44,13 +45,13 @@ const MedumassPage = () => {
                 </section>
 
                 {/* MEDEXCEL HUB Section */}
-                <section className="section medexcel">
+                <section className="medumass-section medumass-medexcel">
                     <h3>MEDEXCEL HUB</h3>
                     <p><strong>Hands On Clinical Skills & Simulation Training</strong></p>
                     <p>
                         MEDEXCEL HUB is a modular clinical training platform focused on skill development, simulation, and certification for:
                     </p>
-                    <ul>
+                    <ul className="medumass-list">
                         <li>Doctors</li>
                         <li>Nurses</li>
                         <li>Paramedics</li>
@@ -60,7 +61,7 @@ const MedumassPage = () => {
                         It emphasizes learning by doing, preparing professionals for real clinical environments.
                     </p>
                     <h4>CORE OFFERINGS</h4>
-                    <ul>
+                    <ul className="medumass-list">
                         <li>Clinical skills workshops</li>
                         <li>Simulation based training modules</li>
                         <li>OSCE assessments</li>
@@ -71,12 +72,12 @@ const MedumassPage = () => {
                 </section>
 
                 {/* Ecosystem Section */}
-                <section className="section ecosystem">
+                <section className="medumass-section medumass-ecosystem">
                     <h3>ONE ECOSYSTEM. COMPLETE TRAINING.</h3>
                     <p>
                         Together, MEDIKSHA and MEDEXCEL HUB deliver:
                     </p>
-                    <ul>
+                    <ul className="medumass-list">
                         <li>Academic excellence through digital learning</li>
                         <li>Practical readiness through hands-on training</li>
                         <li>Standardized assessments and outcomes</li>
@@ -88,9 +89,9 @@ const MedumassPage = () => {
                 </section>
 
                 {/* Who this ecosystem is for */}
-                <section className="section who">
+                <section className="medumass-section medumass-who">
                     <h3>WHO THIS ECOSYSTEM IS FOR</h3>
-                    <ul>
+                    <ul className="medumass-list">
                         <li>Medical students and FMGE aspirants</li>
                         <li>Teaching hospitals and medical colleges</li>
                         <li>Nursing and paramedical institutes</li>
@@ -99,12 +100,12 @@ const MedumassPage = () => {
                 </section>
 
                 {/* The Promise */}
-                <section className="section promise">
+                <section className="medumass-section medumass-promise">
                     <h3>THE PROMISE</h3>
                     <p>
                         Education should not stop at theory, and training should not begin without foundation.
                     </p>
-                    <ul>
+                    <ul className="medumass-list1">
                         <li>Knowledge ready</li>
                         <li>Skill competent</li>
                         <li>Clinically confident</li>
