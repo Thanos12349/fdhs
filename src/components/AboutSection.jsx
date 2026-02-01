@@ -16,10 +16,10 @@ export default function AboutSection() {
 
       <div className="about-right">
         <div className="img-grid">
-          <img src="/Images/img.webp" alt="img1" />
-          <img src="/Images/img.webp" alt="img2" />
-          <img src="/Images/img.webp" alt="img3" />
-          <img src="/Images/img.webp" alt="img4" />
+          <img src="/Images/fdhs1.png" alt="img1" />
+          <img src="/Images/fdhs2.png" alt="img2" />
+          <img src="/Images/fdhs6.png" alt="img3" />
+          <img src="/Images/fdhs3.jpg" alt="img4" />
         </div>
       </div>
     </div>
